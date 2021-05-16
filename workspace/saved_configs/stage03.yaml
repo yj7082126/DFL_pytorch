@@ -1,0 +1,26 @@
+data_params:
+  random_warp     : False
+  random_flip     : False
+  uniform_yaw     : False
+  color_transfer  : None
+
+optim_params:
+  optim_type      : Adam
+  learning_rate   : 1.0e-4
+  lr_schedule     : True
+  use_swa         : False
+  masked_training : True
+  eyes_mouth_prio : True
+  true_style_pow  : 1.0
+  use_gan         : True
+  gan_pow         : 0.1
+  gan_patch_size  : 36
+  gan_dims        : 16
+
+train_params:  
+  batch_size      : 4
+  target_iter     : 12000
+  backup_iter     : 3000
+  save_iter       : 300
+  debug_iter      : 60
+  preview_iter    : 120
